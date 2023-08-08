@@ -1,5 +1,5 @@
 import streamlit as st
-
+import os
 import random 
 
 # importing libraries
@@ -21,7 +21,14 @@ from numpy import mean
 from numpy import absolute
 from numpy import sqrt
 
+is_streamlit_cloud = os.environ.get("STREAMLIT_SERVER") is not None
 
+if is_streamlit_cloud:
+    # File path for deployment on Streamlit Cloud
+    csv_file_path = "insurance.csv"
+else:
+    # File path for local development
+    data = pd.read_csv(r"C:\Users\rohit\insurance.csv")
 
 data = pd.read_csv(r"C:\Users\rohit\insurance.csv")
 dummy = pd.get_dummies(data['smoker'])
