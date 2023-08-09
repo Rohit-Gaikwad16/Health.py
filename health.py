@@ -30,7 +30,7 @@ else:
     # File path for local development
     data = pd.read_csv(r"insurance.csv")
 
-data = pd.read_csv(r"C:\Users\rohit\insurance.csv")
+data = pd.read_csv(r"insurance.csv")
 dummy = pd.get_dummies(data['smoker'])
 df = pd.concat((data,dummy),axis = 1)
 df = df.drop(['no'],axis = 1)
