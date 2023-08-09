@@ -28,7 +28,7 @@ if is_streamlit_cloud:
     csv_file_path = "insurance.csv"
 else:
     # File path for local development
-    data = pd.read_csv(r"C:\Users\rohit\insurance.csv")
+    data = pd.read_csv(r"insurance.csv")
 
 data = pd.read_csv(r"C:\Users\rohit\insurance.csv")
 dummy = pd.get_dummies(data['smoker'])
