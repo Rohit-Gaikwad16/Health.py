@@ -131,7 +131,7 @@ if nav == "Contribute":
     st.markdown("- Share your feedback and suggestions for further improvements.")
     
     st.write("To contribute, you can:")
-    st.markdown("- Fork the GitHub repository: [Your GitHub Repository URL]")
+    st.markdown("- Fork the GitHub repository: https://github.com/Rohit-Gaikwad16/")
     st.markdown("- Make your changes and improvements.")
     st.markdown("- Submit a pull request to the main repository.")
     
